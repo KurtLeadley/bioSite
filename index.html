@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="To be filled later"/>
-    <meta name="keywords" content="To be filled later"/>
-    <meta name="robots" content="index, follow"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="styles.css" type="text/css" rel="stylesheet"/>
-    <link rel="icon" href="favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <title>RL | Home</title>
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="To be filled later"/>
+        <meta name="keywords" content="To be filled later"/>
+        <meta name="robots" content="index, follow"/>
+        <link href="styles.css" type="text/css" rel="stylesheet"/>
+        <link rel="icon" href="favicon/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <title>RL | Home</title>
+    </head>
   <body>   
     <header>
         <h1>Roger Leadley</h1>
@@ -24,52 +23,82 @@
                 <li><a href="recreation.html" class="">RECREATION</a></li>
             </ul>
         </nav>
-        <div class="dropdown">
-            <p class="dropbtn">Menu</p>
-                <div class="dropdown-content">
-                    <a href="index.html" class="">HOME</a>
-                    <a href="career.html" class="">CAREER</a>
-                    <a href="building.html" class="">BUILDING</a>
-                    <a href="recreation.html" class="">RECREATION</a>
-                </div>
-            </div>
     </header>
     <div class="content">               
         <section class="row">
             <article class="column"  id="contentCol">
-                <h3>About Roger Leadley...</h3>
+                <h3>Welcome</h3>
                 <p>
-                    This is mostly place holder text, but my grandfather has done a lot in his life. He grew up in the city, 
-                    but soon found himself living up in the Adirondacks, in New York! He has been a superintendent of a school,
+                    My grandfather Roger Leadley has done a lot in his life. He grew up in the city, 
+                    but soon found himself living up North in the Adirondack Mountains of New York. He has been a superintendent of a school,
                     quite a hunter, a father, a husband, a grandfather and also managed to build a house by himself,
-                    While living in it! More to come soon!....
+                    While living in it!
                 </p>
-                <figure class="showHideMobile">
-                    <img src="images/roger1.jpg" alt="Roger Leadley">
-                    <title>Roger Leadley</title>
-                    <p>
-                        <figcaption>
-                            Roger cayaking up in Lake Pleasant, New York
-                        </figcaption>
-                    </p>
-                </figure>
+                <div class="showHideMobile">
+                    <figure class='photos'>
+                        <div class='imageContainer'>
+                            <img src="images/rogerCanoe.jpg" alt="Roger Canoe" width="90%">
+                            <button class="slideButton left" onclick="changePhotoMob(-1)">&#10094;</button>
+                            <button class="slideButton right" onclick="changePhotoMob(1)">&#10095;</button>
+                        </div>
+                        <title>Roger Canoe</title>
+                        <figcaption>Roger enjoying the Adirondacks in a canoe.</figcaption>                    
+                    </figure>
+                    <figure class='photos'>
+                        <div class='imageContainer'>
+                            <img src="images/rogerAndNikki.png" alt="Roger and His Daugher" width="90%">
+                            <button class="slideButton left" onclick="changePhotoMob(-1)">&#10094;</button>
+                            <button class="slideButton right" onclick="changePhotoMob(1)">&#10095;</button>
+                        </div>
+                        <title>Roger and his daughter</title>
+                        <figcaption>Roger with his daughter during the fall in the Adirondacks.</figcaption>
+                    </figure>
+                    <figure class='photos'>
+                        <div class='imageContainer'>
+                            <img src="images/rogerAndPauline.png" alt="Roger and Pauline" width="90%">
+                            <button class="slideButton left" onclick="changePhotoMob(-1)">&#10094;</button>
+                            <button class="slideButton right" onclick="changePhotoMob(1)">&#10095;</button>
+                        </div>
+                        <title>Roger and Pauline</title>
+                        <figcaption>Roger and his wife Pauline.</figcaption>
+                    </figure>
+                </div>
                 <p>
-                    This is mostly place holder text, but my grandfather has done a lot in his life. He grew up in the city, 
-                    but soon found himself living up in the Adirondacks, in New York! He has been a superintendent of a school,
-                    quite a hunter, a father, a husband, a grandfather and also managed to build a house by himself,
-                    While living in it! More to come soon!....
+                    Many of the things he was involved in during his life has been part of my life too. Everything from trying to swing a hammer, to learning how to snowmobile. He and my father were there.
+                    Click around and you will find some information about the house he built, his career and also things he did for fun. 
+                </p>
+                <p>
+                    Also, many of the pages images can be changed by clicking the arrows.
                 </p>
             </article>
             <div class="showHideDesktop">
                 <article class="column">
-                    <figure>
-                        <img src="images/roger1.jpg" alt="Roger Leadley">
-                        <title>Roger Leadley</title>
-                        <p>
-                            <figcaption>
-                                Roger cayaking up in Lake Pleasant, New York
-                            </figcaption>
-                        </p>
+                    <figure class='photos2'>
+                        <div class='imageContainer'>
+                            <img src="images/rogerCanoe.jpg" alt="Roger Canoe" width="90%">
+                            <button class="slideButton left" onclick="changePhotoDeskT(-1)">&#10094;</button>
+                            <button class="slideButton right" onclick="changePhotoDeskT(1)">&#10095;</button>
+                        </div>
+                        <title>Roger Canoe</title>
+                        <figcaption>Roger enjoying the great Adirondacks of New York in a canoe.</figcaption>                    
+                    </figure>
+                    <figure class='photos2'>
+                        <div class='imageContainer'>
+                            <img src="images/rogerAndNikki.png" alt="Roger and His Daugher" width="90%">
+                            <button class="slideButton left" onclick="changePhotoDeskT(-1)">&#10094;</button>
+                            <button class="slideButton right" onclick="changePhotoDeskT(1)">&#10095;</button>
+                        </div>
+                        <title>Roger and his daughter</title>
+                        <figcaption>Roger with his daughter during the fall in the Adirondacks.</figcaption>
+                    </figure>
+                    <figure class='photos2'>
+                        <div class='imageContainer'>
+                            <img src="images/rogerAndPauline.png" alt="Roger and Pauline" width="90%">
+                            <button class="slideButton left" onclick="changePhotoDeskT(-1)">&#10094;</button>
+                            <button class="slideButton right" onclick="changePhotoDeskT(1)">&#10095;</button>
+                        </div>
+                        <title>Roger and Pauline</title>
+                        <figcaption>Roger and his wife Pauline.</figcaption>
                     </figure>
                 </article>
             </div>
@@ -77,7 +106,56 @@
     </div>
     <footer>
         <p class="footer_text">BUILT BY KL</p>
-        <p class="footer_text"><a href="https://github.com/KurtLeadley">HOSTED BY GITHUB</a></p>
+        <p class="footer_text"><a href="https://github.com/KurtLeadley">POWERED BY GITHUB</a></p>
     </footer>
+    <!-- Add script after DOM loads -->
+    <script>
+            var slideIndex = 1;
+            showFigMob(slideIndex);
+            
+            function changePhotoMob(int) {
+                showFigMob(slideIndex += int);
+                //console.log('clicked');
+            }        
+            function showFigMob(int) {
+                var photoArray = document.getElementsByClassName("photos");
+                if (int > photoArray.length) {
+                    slideIndex = 1
+                }
+                if (int < 1) {
+                    slideIndex = photoArray.length
+                }
+                for (var i = 0; i < photoArray.length; i++) {
+                    photoArray[i].style.display = "none";  
+                }
+                photoArray[slideIndex-1].style.display = "block";  
+            }
+        </script>
+        <script>
+            var slideIndex = 1;
+            showFigDeskT(slideIndex);
+            
+            function changePhotoDeskT(int) {
+                showFigDeskT(slideIndex += int);
+                //console.log('clicked');
+                console.log(int);
+            }        
+            function showFigDeskT(int) {
+                var photoArray = document.getElementsByClassName("photos2");
+                //console.log(photoArray.length);
+                if (int > photoArray.length) {
+                    slideIndex = 1
+                }
+                if (int < 1) {
+                    slideIndex = photoArray.length
+                }
+                for (var i = 0; i < photoArray.length; i++) {
+                    photoArray[i].style.display = "none"; 
+                    //console.log(i); 
+                }
+                photoArray[slideIndex-1].style.display = "block";
+                console.log(photoArray[slideIndex-1]);  
+            }
+        </script>
   </body>
 </html>
