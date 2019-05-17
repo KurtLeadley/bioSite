@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="To be filled later"/>
         <meta name="keywords" content="To be filled later"/>
         <meta name="robots" content="index, follow"/>
+        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
         <link href="styles.css" type="text/css" rel="stylesheet"/>
         <link rel="icon" href="favicon/favicon.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>RL | Home</title>
     </head>
   <body>   
@@ -17,7 +19,7 @@
         <h1>Roger Leadley</h1>
         <nav>
             <ul>
-                <li><a href="index.html" class="">HOME</a></li>
+                <li><a href="index.html" class="active">HOME</a></li>
                 <li><a href="career.html" class="">CAREER</a></li>
                 <li><a href="building.html" class="">BUILDING</a></li>
                 <li><a href="recreation.html" class="">RECREATION</a></li>
@@ -110,52 +112,52 @@
     </footer>
     <!-- Add script after DOM loads -->
     <script>
-            var slideIndex = 1;
-            showFigMob(slideIndex);
-            
-            function changePhotoMob(int) {
-                showFigMob(slideIndex += int);
-                //console.log('clicked');
-            }        
-            function showFigMob(int) {
-                var photoArray = document.getElementsByClassName("photos");
-                if (int > photoArray.length) {
-                    slideIndex = 1
-                }
-                if (int < 1) {
-                    slideIndex = photoArray.length
-                }
-                for (var i = 0; i < photoArray.length; i++) {
-                    photoArray[i].style.display = "none";  
-                }
-                photoArray[slideIndex-1].style.display = "block";  
+        var slideIndex = 1;
+        showFigMob(slideIndex);
+        
+        function changePhotoMob(int) {
+            showFigMob(slideIndex += int);
+            //console.log('clicked');
+        }        
+        function showFigMob(int) {
+            var photoArray = document.getElementsByClassName("photos");
+            if (int > photoArray.length) {
+                slideIndex = 1
             }
-        </script>
-        <script>
-            var slideIndex = 1;
-            showFigDeskT(slideIndex);
-            
-            function changePhotoDeskT(int) {
-                showFigDeskT(slideIndex += int);
-                //console.log('clicked');
-                console.log(int);
-            }        
-            function showFigDeskT(int) {
-                var photoArray = document.getElementsByClassName("photos2");
-                //console.log(photoArray.length);
-                if (int > photoArray.length) {
-                    slideIndex = 1
-                }
-                if (int < 1) {
-                    slideIndex = photoArray.length
-                }
-                for (var i = 0; i < photoArray.length; i++) {
-                    photoArray[i].style.display = "none"; 
-                    //console.log(i); 
-                }
-                photoArray[slideIndex-1].style.display = "block";
-                console.log(photoArray[slideIndex-1]);  
+            if (int < 1) {
+                slideIndex = photoArray.length
             }
-        </script>
+            for (var i = 0; i < photoArray.length; i++) {
+                photoArray[i].style.display = "none";  
+            }
+            photoArray[slideIndex-1].style.display = "block";  
+        }
+    </script>
+    <script>
+        var slideIndex = 1;
+        showFigDeskT(slideIndex);
+        
+        function changePhotoDeskT(int) {
+            showFigDeskT(slideIndex += int);
+            //console.log('clicked');
+            console.log(int);
+        }        
+        function showFigDeskT(int) {
+            var photoArray = document.getElementsByClassName("photos2");
+            //console.log(photoArray.length);
+            if (int > photoArray.length) {
+                slideIndex = 1
+            }
+            if (int < 1) {
+                slideIndex = photoArray.length
+            }
+            for (var i = 0; i < photoArray.length; i++) {
+                photoArray[i].style.display = "none"; 
+                //console.log(i); 
+            }
+            photoArray[slideIndex-1].style.display = "block";
+            console.log(photoArray[slideIndex-1]);  
+        }
+    </script>
   </body>
 </html>
